@@ -1,6 +1,6 @@
 # secured-chatroom
 -- But
-Développer une application de messagerie instantanée sécurisée utilisant une hiérarchie d’entités virtuelles de certification x509 avec OpenSSL et LDAP. L'objectif est de sécuriser les échanges électroniques entre entreprises, particuliers et administrations via une Infrastructure à Clef Publique (PKI).
+- Développer une application de messagerie instantanée sécurisée utilisant une hiérarchie d’entités virtuelles de certification x509 avec OpenSSL et LDAP. L'objectif est de sécuriser les échanges électroniques entre entreprises, particuliers et administrations via une Infrastructure à Clef Publique (PKI).
 
 -- Fonctionnalités
 - Inscription et Connexion:
