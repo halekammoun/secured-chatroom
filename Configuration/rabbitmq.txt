@@ -1,0 +1,25 @@
+1) on a suivi ce vidéo pour l'installation:
+https://www.youtube.com/watch?v=N-AqOeaP8Ag&ab_channel=ProgrammingKnowledge
+2)puis on a tapé la commande:
+sudo rabbitmq-plugins enable rabbitmq_management
+3)puis on ajouté ce fichier de configuration (dans qques distributions tu ne le trouve pas et tu dois le créer):
+touch /etc/rabbitmq/rabbitmq.conf
+voici le contenu de fichier:
+auth_backends.1 = ldap
+auth_backends.2 = internal
+auth_ldap.servers.1 = 192.168.17.142
+auth_ldap.port = 389  # Use 636 for LDAPS (LDAP over SSL)
+auth_ldap.use_ssl = false  # Set to true if using LDAPS
+auth_ldap.user_dn_pattern = uid=${username},ou=users,dc=tekup,dc=tn
+auth_ldap.log = true  # Useful for debugging LDAP integration
+
+auth_ldap.dn_lookup_attribute = sAMAccountName
+auth_ldap.dn_lookup_base = ou=users,dc=tekup,dc=tn
+
+loopback_users = none
+~     
+4) puis on fait restart au service:
+sudo service rabbitmq-server enable
+sudo service rabbitmq-server start
+c'est tous!  
+                  

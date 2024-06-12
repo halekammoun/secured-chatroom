@@ -1,0 +1,26 @@
+on a suivi ce video
+https://www.youtube.com/watch?v=-kCaKjW-Vnk&ab_channel=ToTatCa
+pour le ldap + lam on fait :
+sudo apt update && sudo apt upgrade -y
+
+on a changé le nom de la machine :
+hostname (ldap)
+ et on a changé /etc/hosts 
+ldap1 notreIP
+
+ensuite on a fait 
+sudo apt install apache2 php php-cgi libapache2-mod-php php-mbstring php-common php-pear -y
+
+on a installe ldap avec la commande
+sudo apt install slapd ldap-utils -y  
+pour le mot de passe de notre slapd on a mis root
+
+ensuite il nous reste lam 
+on fait 
+sudo apt -y install ldap-account-manager
+sudo reload apache2
+sudo a2encong php*cgi
+on enable le apache2 
+ssystemctl enable apache2
+
+on ouvre le lam et ça va marcher 
