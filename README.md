@@ -26,14 +26,14 @@ Communication avec le serveur de messagerie RabbitMQ.
 Vérification des informations d'identification et des certificats.
 
 -- Outils Utilisés
-RabbitMQ: Broker de messagerie basé sur le protocole AMQP.
-pycryptodome: Bibliothèque Python pour le chiffrement/déchiffrement.
-OpenSSL: Interface pour la génération de certificats X509.
-Tkinter: Interface standard pour la création de GUI en Python.
-cryptography: Bibliothèque pour les certificats X509.
-OpenLDAP: Implémentation du protocole LDAP sous Ubuntu.
-Pika: Client Python pour RabbitMQ.
+- RabbitMQ: Broker de messagerie basé sur le protocole AMQP.
+- pycryptodome: Bibliothèque Python pour le chiffrement/déchiffrement.
+- OpenSSL: Interface pour la génération de certificats X509.
+- Tkinter: Interface standard pour la création de GUI en Python.
+- cryptography: Bibliothèque pour les certificats X509.
+- OpenLDAP: Implémentation du protocole LDAP sous Ubuntu.
+- Pika: Client Python pour RabbitMQ.
 
 -- Références
-YouTube - Public Key Infrastructure (PKI): https://www.youtube.com/watch?v=x_OWvcC8YY0
-PyOpenSSL Documentation : https://pyopenssl.org/en/stable/api.html
+- Public Key Infrastructure (PKI): https://www.youtube.com/watch?v=x_OWvcC8YY0
+- PyOpenSSL Documentation : https://pyopenssl.org/en/stable/api.html
